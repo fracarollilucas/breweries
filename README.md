@@ -2,7 +2,7 @@
 This repository is the result of my attempt at a Data Engineering pipeline architecture that consumes data from an API, transforms it and persists it to a data lake.
 
 # Preamble
-This tutorial assumes you have Docker and Airflow and have basic familiarity with them, as well as with git.
+This tutorial assumes you have Docker and Airflow and have basic familiarity with them, as well as with git. Furthermore, this `README` file is merely an instruction manual on how to run the code. For design considerations I have made and other aspects of documenting the process, refer to `DESIGNPROCESS.md`. 
 
 # How to run 
 1. Clone this repository into your `dags/` folder, or wherever you run your DAGs.
