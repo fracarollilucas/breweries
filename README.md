@@ -6,9 +6,10 @@ This tutorial assumes you have Docker and Airflow and have basic familiarity wit
 
 # How to run 
 1. Clone this repository into your `dags/` folder, or wherever you run your DAGs.
-2. Make sure you have Airflow running. For most Windows users, this means entering the directory where you have your `docker-compose.yaml` and running `docker-compose up airflow-init` on the Command Prompt, but you can [read the documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html) for mor details.
-3. Enter Airflow (usually, this means typing `localhost:8080` on your browser and hitting `Enter`). If you're asked to provide credentials, they most likely are `airflow` both for the username and the password.
-4. Upon landing on the home page, you should see a list of DAG names, among which you should find `breweries_pipeline`. Click on it.
+2. `cd` into the `breweries/` folder and run `pip install -r requirements.txt`
+3. Make sure you have Airflow running. For most Windows users, this means entering the directory where you have your `docker-compose.yaml` and running `docker-compose up airflow-init` on the Command Prompt, but you can [read the documentation](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html) for mor details.
+4. Enter Airflow (usually, this means typing `localhost:8080` on your browser and hitting `Enter`). If you're asked to provide credentials, they most likely are `airflow` both for the username and the password.
+5. Upon landing on the home page, you should see a list of DAG names, among which you should find `breweries_pipeline`. Click on it.
 
 ![image](https://github.com/user-attachments/assets/c26b37f5-9e35-492c-bc4d-db940b9f6ecf)
 
