@@ -9,7 +9,9 @@ COPY dags/ $AIRFLOW_HOME/dags/
 WORKDIR $AIRFLOW_HOME/dags/
 RUN mkdir logs
 RUN mkdir config
+RUN mkdir plugins
 RUN mkdir data
+RUN echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 
 # Install any additional requirements
 COPY requirements.txt .
