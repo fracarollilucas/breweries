@@ -173,7 +173,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./config:/opt/airflow/config
       - ./plugins:/opt/airflow/plugins
-      - ./dags/breweries/data:/opt/airflow/data
+      - ./data:/opt/airflow/data
     depends_on:
       <<: *airflow-common-depends-on
       airflow-init:
