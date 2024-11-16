@@ -19,6 +19,6 @@ COPY docker-compose.yaml .
 RUN pip install -r requirements.txt
 
 # Initialize the Airflow database
-RUN airflow db init
+# RUN airflow db init
 # Set the entrypoint to start the Airflow scheduler and webserver
-ENTRYPOINT ["airflow", "scheduler"]
+# ENTRYPOINT ["airflow", "scheduler"]
