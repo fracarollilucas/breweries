@@ -17,9 +17,3 @@ RUN echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 COPY requirements.txt .
 COPY docker-compose.yaml . 
 RUN pip install -r requirements.txt
-
-# Initialize the Airflow database
-RUN airflow db init
-
-# Set the entrypoint to start the Airflow scheduler and webserver
-ENTRYPOINT ["airflow", "scheduler"]
