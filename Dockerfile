@@ -9,6 +9,7 @@ COPY dags/ $AIRFLOW_HOME/dags/
 WORKDIR $AIRFLOW_HOME/dags/
 RUN mkdir logs
 RUN mkdir config
+RUN mkdir data
 
 # Install any additional requirements
 COPY requirements.txt .
