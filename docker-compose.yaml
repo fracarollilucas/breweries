@@ -44,10 +44,6 @@
 #
 # Feel free to modify this file to suit your needs.
 ---
-services:
-  breweries-pipeline:
-    build: .
-
 x-airflow-common:
   &airflow-common
   # In order to add custom dependencies or upgrade provider packages you can use your extended image.
@@ -88,7 +84,9 @@ x-airflow-common:
       condition: service_healthy
     postgres:
       condition: service_healthy
-
+services:
+  breweries-pipeline:
+    build: .
   postgres:
     image: postgres:13
     environment:
